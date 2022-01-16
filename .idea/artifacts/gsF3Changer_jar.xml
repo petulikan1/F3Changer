@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="gsF3Changer:jar">
+    <output-path>C:/BUILDS</output-path>
+    <root id="archive" name="gsF3Changer.jar">
+      <element id="module-output" name="gsF3Changer" />
+    </root>
+  </artifact>
+</component>

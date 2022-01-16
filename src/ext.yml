@@ -1,0 +1,6 @@
+main: me.petulikan1.f3changer.Loader
+name: F3Changer
+author: petulikan1
+version: 1.0
+configs:
+  - "Words.yml"

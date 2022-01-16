@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="gsAPI">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../gsAPI" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../gsAPI" recursive="false" />
+  </library>
+</component>
