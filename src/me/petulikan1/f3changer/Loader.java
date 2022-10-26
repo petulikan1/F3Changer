@@ -21,9 +21,9 @@ public class Loader extends Extension implements Listener {
     public void enable() {
         c=loadConfig("Words.yml");
         getProxy().getPluginManager().registerListener(getPlugin(),this);
-        getProxy().getPluginManager().registerCommand(getPlugin(),new F3Command("f3","glowsite.command.f3"));
+        getProxy().getPluginManager().registerCommand(getPlugin(),new F3Command("f3","f3changer.command"));
         for(ProxiedPlayer p: BungeeCord.getInstance().getPlayers()){
-            sendLocally(p,"GlowSite.cz");
+            sendLocally(p,"F3Changer");
         }
     }
     @Override
@@ -36,7 +36,7 @@ public class Loader extends Extension implements Listener {
         new Tasker(){
             @Override
             public void run() {
-                sendLocally(e.getPlayer(), "GlowSite.cz");
+                sendLocally(e.getPlayer(), "F3Changer");
             }
         }.runLater(10);
     }
@@ -55,7 +55,7 @@ public class Loader extends Extension implements Listener {
 
         @Override
         public void execute(CommandSender s, String[] args) {
-            if(!s.hasPermission("glowsite.command.f3")){
+            if(!s.hasPermission("f3changer.command")){
                 return;
             }
             TheAPI.msg(Loader.c.getString("Reload"),s);
